@@ -1,0 +1,168 @@
+
+:root{
+    font-size: 12pt;
+    color: #DDDDDD;
+}
+
+body {
+    width: 90vw;
+    height: 90vh;
+    margin: 0 auto;
+    background-color: #444444;
+}
+
+@media only screen and (max-width: 980px) {
+    body {
+        width: 100vw;
+    }
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+    padding: 2px;
+    border-width: 0;
+    color: #DDDDDD;
+    box-sizing: border-box;
+    font-size: 5em;
+    background-color: #666666;
+}
+
+input:disabled {
+    background-color: #222222;
+}
+
+input::placeholder {
+    color: #AAAAAA;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outter-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    
+}
+
+input[type=button]{
+    -webkit-appearance: none;
+}
+
+input[type=checkbox] {
+    
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    resize: vertical;
+    box-sizing: border-box;
+    margin: 2px;
+    border: 0;
+    background-color: #666666;
+    color: #DDDDDD;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+div {
+    box-sizing: border-box;
+    margin: 2px;
+}
+
+#content {
+    display: grid;
+    grid-gap: 0;
+
+    grid: [row0-start] ". . . ." 0 [row0-end]
+          [row1-start] ". current-lbl change-lbl lock-lbl" 3em [row1-end]
+          [row2-start] "img-gold pri-gold sec-gold lock" auto [row2-end]
+          [row3-start] "img-silver pri-silver sec-silver tri-add" auto [row3-end]
+          [row4-start] "img-bronze pri-bronze sec-bronze tri-subtract" auto [row4-end]
+          [row5-start] ". log log dance" 1fr [row5-end]
+          / 10% 30% 30% 30%;
+          
+    place-items: stretch stretch;      
+    
+    box-sizing: border-box;
+    padding: 0 5px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+#img-gold{
+    grid-area: img-gold;
+}
+
+#img-silver{
+    grid-area: img-silver;
+}
+
+#img-bronze{
+    grid-area: img-bronze;
+}
+
+#pri-gold{
+    grid-area: pri-gold;
+}
+
+#pri-silver{
+    grid-area: pri-silver;
+}
+
+#pri-bronze{
+    grid-area: pri-bronze;
+}
+
+#lock{
+    grid-area: lock;
+}
+
+#sec-gold{
+    grid-area: sec-gold;
+}
+
+#sec-silver{
+    grid-area: sec-silver;
+}
+
+#sec-bronze{
+    grid-area: sec-bronze;
+}
+
+#tri-add{
+    grid-area: tri-add;
+}
+
+#tri-subtract{
+    grid-area: tri-subtract;
+}
+
+#log{
+    grid-area: log;
+}
+
+#current-lbl{
+    grid-area: current-lbl;
+}
+
+#change-lbl{
+    grid-area: change-lbl;
+}
+
+#lock-lbl{
+    grid-area: lock-lbl;
+    place-self: stretch center;
+}
+
+#dance{
+    grid-area: dance;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coin Purse</title>
+        <meta name="theme-color" content="#444444" />
+        <base href="wfrp.gower.space" />
+        <link rel="stylesheet" href="main.css">
+
+        <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="content">
+            
+            <div id="img-gold">
+                <img src="img/gold.png" />
+            </div>
+            <div id="img-silver">
+                <img src="img/silver.png" />
+            </div>
+            <div id="img-bronze">
+                <img src="img/bronze.png" />
+            </div>
+            
+            <div id="current-lbl">
+                <h3>Current:</h3>
+            </div>
+            <div id="pri-gold">
+                <input class="pri-gold" type="number" placeholder="Gold">
+            </div>
+            <div id="pri-silver">
+                <input class="pri-silver" type="number" placeholder="Silver">
+            </div>
+            <div id="pri-bronze">
+                <input class="pri-bronze" type="number" placeholder="Bronze">
+            </div>
+            <div id="lock">
+                <input class="lock" type="checkbox">
+            </div>
+            
+            <div id="change-lbl">
+                <h3>Input:</h3>
+            </div>
+            <div id="sec-gold">
+                <input class="sec-gold" type="number">
+            </div>
+            <div id="sec-silver">
+                <input class="sec-silver" type="number">
+            </div>
+            <div id="sec-bronze">
+                <input class="sec-bronze" type="number">
+            </div>
+            
+            
+            
+            <div id="lock-lbl">
+                <h3>Lock:</h3>
+            </div>
+            <div id="tri-add">
+                <input type="button" value="Add">
+            </div>
+            <div id="tri-subtract">
+                <input type="button" value="Spend">
+            </div>
+            
+            <div id="log">
+                <textarea class="log" disabled></textarea>
+            </div>
+            
+            <div id="dance">
+                <img src="">
+            </div>
+            
+        </div>
+    </body>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="main.js"></script>
+</html>
